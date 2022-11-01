@@ -1,0 +1,64 @@
+# Based on https://github.com/Pycord-Development/pycord/master/.github/ISSUE_TEMPLATE/bug_report.yml
+
+name: Bug Report
+description: Report incorrect/broken bot behaviour
+labels: "unconfirmed bug"
+body:
+    -   type: markdown
+        attributes:
+            value:
+                "Thank you for filling out this report. It will be checked later.
+                If you want real-time support, consider joining our [Discord server](https://discord.gg/yPAcj52).
+
+                Note that this form is only for bugs, any content not related to bugs will be ignored and deleted.
+                Please use either English or Russian languages to fill out the form."
+    -   type: input
+        attributes:
+            label: Description
+            description: A short, simple summary of your issue
+        validations:
+            required: true
+    -   type: textarea
+        attributes:
+            label: How to reproduce
+            description:
+                "What did you do to make it happen? For example:
+                1) Start up the bot
+                2) Use the `/kick` command without any parameters
+                ...
+
+                Screenshots are optional but appreciated."
+        validations:
+            required: true
+    -   type: textarea
+        attributes:
+            label: Expected results
+            description: What was supposed to happen
+        validations:
+            required: true
+    -   type: textarea
+        attributes:
+            label: Actual results
+            description: What actually happened
+        validations:
+            required: true
+    -   type: textarea
+        attributes:
+            label: System Information
+            description:
+                "Please provide your OS type and version (e.g. Windows 10 Pro 20H2), Python version and the bot version"
+        validations:
+            required: true
+    -   type: checkboxes
+        attributes:
+            label: Checklist
+            description: "Please make sure you've done all the things listed below:"
+            options:
+                -   label: I have searched for duplicates of the report;
+                    required: true
+                -   label: I have hidden any visible secret information like tokens;
+                    required: true
+    -   type: textarea
+        attributes:
+            label: Additional information
+            description: Please share if there is anything else you want to say
