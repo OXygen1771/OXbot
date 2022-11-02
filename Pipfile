@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 py-cord = "*"
+pydantic = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
